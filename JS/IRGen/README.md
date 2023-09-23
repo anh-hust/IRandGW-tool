@@ -1,4 +1,6 @@
-## Environment require:
+# SET UP MANUAL 🤖🤖
+
+## Environment require 👺:
 
 1. NodeJS
 2. Mosquitto
@@ -20,7 +22,7 @@ npm init -y
 npm install nedb fs mqtt express cors path
 ```
 
-## STEP 2: Set up Mosquitto
+## STEP 2: Set up Mosquitto 🦟
 
 1. Download and install [Mosquitto](https://github.com/benbalter/word-to-markdown)
 
@@ -31,7 +33,7 @@ listener 1883
 allow_anonymous=true
 ```
 
-## STEP 3: Run tool
+## STEP 3: Run tool 🏇
 
 1. Open MQTT broker using Mosquitto
 
@@ -62,6 +64,10 @@ node checkMaintain.js
 ```
 node genCSVremoteList.js
 ```
+
+<hr>
+<h2 align='center'>ENJOY ❤️❤️❤️</h2>
+<hr>
 
 # Overview
 

@@ -1,6 +1,6 @@
-## SET UP MANUAL
+# SET UP MANUAL 🤖🤖
 
-### 1. Open HOSPOT ON LAPTOP
+### 1. Open HOSPOT ON LAPTOP 💻 🖥
 
 If you have no idea to do that, check it out
 
@@ -16,7 +16,7 @@ ip r
 
 ### 4. Config MACROS for connection of ESP32
 
-**4.1. Open project by PlatformIO**
+**4.1. Open project by PlatformIO** 👽
 
 **4.2. In _/include/main.h_ change these parameter**
 
@@ -28,4 +28,5 @@ const char* password = "<pasword_host_port_at_step_1>";
 ```
 
 ## All done!!! Enjoy and collect & check IR signal
- 😋😋😋
+
+<h2 align='center'>😋😋😋</h2>
