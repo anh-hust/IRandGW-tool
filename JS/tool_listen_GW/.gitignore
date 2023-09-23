@@ -1,0 +1,9 @@
+#log file
+log/*
+node_modules
+
+compare/*
+
+package*
+
+test*
