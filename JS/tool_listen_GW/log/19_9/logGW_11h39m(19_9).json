@@ -1,0 +1,9 @@
+[// Time: 11:39:55    ---    Date: 19-9
+// 1. gw/8CF681FFFEF006B0/zclresponse:
+{"clusterId":"0x0006","commandId":"0xFD","commandData":"0x00","clusterSpecific":true,"deviceID":"0x9CC1","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0xDC8E95FFFE2B8968","endpoint":3}},
+
+// Time: 11:39:55    ---    Date: 19-9
+// 2. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0xDC8E95FFFE2B8968","child":3,"value":1,"trait":"traitSceneCount"}}}},
+
+]

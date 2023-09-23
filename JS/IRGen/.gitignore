@@ -1,0 +1,17 @@
+# test file
+test*.js
+
+# database
+database*/*
+checkKeyDB/*
+visual/*
+noLongerUse/*
+csvFile/*
+
+# packag nodeJS
+package*
+node_modules/
+log/
+
+# test file Cpp
+testcpp/

@@ -1,0 +1,1396 @@
+[
+  // Time: 14:48:39    ---    Date: 19-9
+  // 331. ConnectivityAssistantInsideCommunicateToZigbeeHandle:
+  {
+    "commandType": "permitjoinZB3OpenNetworkOnly",
+    "delayMs": 180,
+    "requestID": "add_child_device***20851_1695109888.834175",
+    "devideJoinedName": "",
+    "devideJoinedLocate": "",
+    "connectivityType": "zigbee"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 332. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      {
+        "command": "plugin network-creator-security open-network",
+        "postDelayMs": 100
+      }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 333. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin network-creator-security open-network" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 334. gw/8CF681FFFEF006B0/executed:
+  { "delayMs": 100 },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 335. gw/8CF681FFFEF006B0/trustcenterjoinedNodeID:
+  { "nodeId": "0xD4DF", "decisionInit": 0, "statusInit": 1 },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 336. gw/8CF681FFFEF006B0/devicejoined:
+  {
+    "nodeId": "0xD4DF",
+    "deviceState": 16,
+    "deviceType": "0x0302", // @NOTE device type Temperature Sensor
+    "timeSinceLastMessage": 31,
+    "deviceEndpoint": {
+      "eui64": "0x60A423FFFE093AE3",
+      "endpoint": 1,
+      "clusterInfo": [
+        { "clusterId": "0x0000", "clusterType": "In" }, // @NOTE basic
+        { "clusterId": "0x0001", "clusterType": "In" }, // @NOTE power configuration
+        { "clusterId": "0x0402", "clusterType": "In" }, // @NOTE Temperature Measurement
+        { "clusterId": "0x0405", "clusterType": "In" }, // @NOTE Relative Humidity Measurement
+        { "clusterId": "0x0019", "clusterType": "Out" }
+      ]
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 337. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      { "command": "zcl global direction 0x0" },
+      { "command": "zcl global read 0x0 0x5" },
+      { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 338. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global direction 0x0" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 339. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global read 0x0 0x5" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 340. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 341. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0000",
+    "commandId": "0x01",
+    "commandData": "0x0500004206545330323031",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 342. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0000",
+    "attributeId": "0x0005",
+    "attributeBuffer": "0x06545330323031",
+    "attributeDataType": "0x42",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x00"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 343. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "commandId": "0x0A",
+    "commandData": "0x2000201E210020C8",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 344. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "attributeId": "0x0020",
+    "attributeBuffer": "0x1E",
+    "attributeDataType": "0x20",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 345. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "attributeId": "0x0021",
+    "attributeBuffer": "0xC8",
+    "attributeDataType": "0x20",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 346. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0402",
+    "commandId": "0x0A",
+    "commandData": "0x000029CC0B",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 347. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0402",
+    "attributeId": "0x0000",
+    "attributeBuffer": "0xCC0B",
+    "attributeDataType": "0x29",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 348. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0405",
+    "commandId": "0x0A",
+    "commandData": "0x000021F61D",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 349. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0405",
+    "attributeId": "0x0000",
+    "attributeBuffer": "0xF61D",
+    "attributeDataType": "0x21",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 350. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "commandId": "0x0A",
+    "commandData": "0x210020C82000201E",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 351. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "attributeId": "0x0021", // @NOTE Doc7: BatteryPercentageRemaining
+    "attributeBuffer": "0xC8", // 200
+    "attributeDataType": "0x20",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 352. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "attributeId": "0x0020", // @NOTE Doc7: BatteryVoltage
+    "attributeBuffer": "0x1E", // 30
+    "attributeDataType": "0x20",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 353. gw/8CF681FFFEF006B0/commands:
+  { "commands": [{ "command": "zdo node 0xD4DF" }] },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 354. gw/8CF681FFFEF006B0/executed:
+  { "command": "zdo node 0xD4DF" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 355. gw/8CF681FFFEF006B0/publishstate:
+  {},
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 357. gw/8CF681FFFEF006B0/relays:
+  { "relays": [] },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 356. gw/8CF681FFFEF006B0/settings:
+  {
+    "ncpStackVersion": "6.9.2-256",
+    "networkUp": true,
+    "networkPanId": "0x079C",
+    "radioTxPower": 20,
+    "radioChannel": 11
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 358. gw/8CF681FFFEF006B0/devices:
+  {
+    "devices": [
+      {
+        "nodeId": "0x479B",
+        "deviceState": 32,
+        "deviceType": "0x0202",
+        "timeSinceLastMessage": 19849,
+        "deviceEndpoint": {
+          "eui64": "0x94DEB8FFFEAAF7AF",
+          "endpoint": 1,
+          "clusterInfo": [
+            { "clusterId": "0x0000", "clusterType": "In" },
+            { "clusterId": "0x0003", "clusterType": "In" },
+            { "clusterId": "0x0004", "clusterType": "In" },
+            { "clusterId": "0x0005", "clusterType": "In" },
+            { "clusterId": "0x0006", "clusterType": "In" },
+            { "clusterId": "0x0008", "clusterType": "In" },
+            { "clusterId": "0x0102", "clusterType": "In" },
+            { "clusterId": "0x0301", "clusterType": "In" },
+            { "clusterId": "0x0B05", "clusterType": "In" },
+            { "clusterId": "0xFCC0", "clusterType": "In" },
+            { "clusterId": "0x0019", "clusterType": "Out" },
+            { "clusterId": "0xFCC0", "clusterType": "Out" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0x479B",
+        "deviceState": 32,
+        "deviceType": "0x0061",
+        "timeSinceLastMessage": 19849,
+        "deviceEndpoint": {
+          "eui64": "0x94DEB8FFFEAAF7AF",
+          "endpoint": 242,
+          "clusterInfo": [{ "clusterId": "0x0021", "clusterType": "Out" }]
+        }
+      },
+      {
+        "nodeId": "0x3222",
+        "deviceState": 32,
+        "deviceType": "0x0402",
+        "timeSinceLastMessage": 19849,
+        "deviceEndpoint": {
+          "eui64": "0x5C0272FFFEC4CAF7",
+          "endpoint": 1,
+          "clusterInfo": [
+            { "clusterId": "0x0000", "clusterType": "In" },
+            { "clusterId": "0x0001", "clusterType": "In" },
+            { "clusterId": "0x0003", "clusterType": "In" },
+            { "clusterId": "0x0500", "clusterType": "In" },
+            { "clusterId": "0x0003", "clusterType": "Out" },
+            { "clusterId": "0x0019", "clusterType": "Out" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0xE030",
+        "deviceState": 16,
+        "deviceType": "0x0402",
+        "timeSinceLastMessage": 2860,
+        "deviceEndpoint": {
+          "eui64": "0xBC33ACFFFEDB6F47",
+          "endpoint": 1,
+          "clusterInfo": [
+            { "clusterId": "0x0000", "clusterType": "In" },
+            { "clusterId": "0x0001", "clusterType": "In" },
+            { "clusterId": "0x0500", "clusterType": "In" },
+            { "clusterId": "0x0019", "clusterType": "Out" },
+            { "clusterId": "0x000A", "clusterType": "Out" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0xD4DF",
+        "deviceState": 16,
+        "deviceType": "0x0302",
+        "timeSinceLastMessage": 2,
+        "deviceEndpoint": {
+          "eui64": "0x60A423FFFE093AE3",
+          "endpoint": 1,
+          "clusterInfo": [
+            { "clusterId": "0x0000", "clusterType": "In" },
+            { "clusterId": "0x0001", "clusterType": "In" },
+            { "clusterId": "0x0402", "clusterType": "In" },
+            { "clusterId": "0x0405", "clusterType": "In" },
+            { "clusterId": "0x0019", "clusterType": "Out" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0x46BA",
+        "deviceState": 16,
+        "deviceType": "0x0004",
+        "timeSinceLastMessage": 6911,
+        "deviceEndpoint": {
+          "eui64": "0x1C34F1FFFE560279",
+          "endpoint": 1,
+          "clusterInfo": [
+            { "clusterId": "0x0000", "clusterType": "In" },
+            { "clusterId": "0x0003", "clusterType": "In" },
+            { "clusterId": "0x0004", "clusterType": "In" },
+            { "clusterId": "0x0005", "clusterType": "In" },
+            { "clusterId": "0x0006", "clusterType": "In" },
+            { "clusterId": "0x0301", "clusterType": "In" },
+            { "clusterId": "0x0B05", "clusterType": "In" },
+            { "clusterId": "0xFCC0", "clusterType": "In" },
+            { "clusterId": "0x0005", "clusterType": "Out" },
+            { "clusterId": "0x0019", "clusterType": "Out" },
+            { "clusterId": "0xFCC0", "clusterType": "Out" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0x46BA",
+        "deviceState": 16,
+        "deviceType": "0x0004",
+        "timeSinceLastMessage": 6911,
+        "deviceEndpoint": {
+          "eui64": "0x1C34F1FFFE560279",
+          "endpoint": 2,
+          "clusterInfo": [
+            { "clusterId": "0x0000", "clusterType": "In" },
+            { "clusterId": "0x0003", "clusterType": "In" },
+            { "clusterId": "0x0004", "clusterType": "In" },
+            { "clusterId": "0x0005", "clusterType": "In" },
+            { "clusterId": "0x0006", "clusterType": "In" },
+            { "clusterId": "0x0301", "clusterType": "In" },
+            { "clusterId": "0x0B05", "clusterType": "In" },
+            { "clusterId": "0xFCC0", "clusterType": "In" },
+            { "clusterId": "0x0005", "clusterType": "Out" },
+            { "clusterId": "0x0019", "clusterType": "Out" },
+            { "clusterId": "0xFCC0", "clusterType": "Out" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0x46BA",
+        "deviceState": 16,
+        "deviceType": "0x0004",
+        "timeSinceLastMessage": 6911,
+        "deviceEndpoint": {
+          "eui64": "0x1C34F1FFFE560279",
+          "endpoint": 3,
+          "clusterInfo": [
+            { "clusterId": "0x0000", "clusterType": "In" },
+            { "clusterId": "0x0003", "clusterType": "In" },
+            { "clusterId": "0x0004", "clusterType": "In" },
+            { "clusterId": "0x0005", "clusterType": "In" },
+            { "clusterId": "0x0006", "clusterType": "In" },
+            { "clusterId": "0x0301", "clusterType": "In" },
+            { "clusterId": "0x0B05", "clusterType": "In" },
+            { "clusterId": "0xFCC0", "clusterType": "In" },
+            { "clusterId": "0x0005", "clusterType": "Out" },
+            { "clusterId": "0x0019", "clusterType": "Out" },
+            { "clusterId": "0xFCC0", "clusterType": "Out" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0x46BA",
+        "deviceState": 16,
+        "deviceType": "0x0004",
+        "timeSinceLastMessage": 6911,
+        "deviceEndpoint": {
+          "eui64": "0x1C34F1FFFE560279",
+          "endpoint": 4,
+          "clusterInfo": [
+            { "clusterId": "0x0000", "clusterType": "In" },
+            { "clusterId": "0x0003", "clusterType": "In" },
+            { "clusterId": "0x0004", "clusterType": "In" },
+            { "clusterId": "0x0005", "clusterType": "In" },
+            { "clusterId": "0x0006", "clusterType": "In" },
+            { "clusterId": "0x0301", "clusterType": "In" },
+            { "clusterId": "0x0B05", "clusterType": "In" },
+            { "clusterId": "0xFCC0", "clusterType": "In" },
+            { "clusterId": "0x0005", "clusterType": "Out" },
+            { "clusterId": "0x0019", "clusterType": "Out" },
+            { "clusterId": "0xFCC0", "clusterType": "Out" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0x46BA",
+        "deviceState": 16,
+        "deviceType": "0x0061",
+        "timeSinceLastMessage": 6911,
+        "deviceEndpoint": {
+          "eui64": "0x1C34F1FFFE560279",
+          "endpoint": 242,
+          "clusterInfo": [{ "clusterId": "0x0021", "clusterType": "Out" }]
+        }
+      },
+      {
+        "nodeId": "0x9CC1",
+        "deviceState": 16,
+        "deviceType": "0x0000",
+        "timeSinceLastMessage": 11504,
+        "deviceEndpoint": {
+          "eui64": "0xDC8E95FFFE2B8968",
+          "endpoint": 1,
+          "clusterInfo": [
+            { "clusterId": "0x0000", "clusterType": "In" },
+            { "clusterId": "0x0001", "clusterType": "In" },
+            { "clusterId": "0x0006", "clusterType": "In" },
+            { "clusterId": "0x0019", "clusterType": "Out" },
+            { "clusterId": "0x000A", "clusterType": "Out" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0x9CC1",
+        "deviceState": 16,
+        "deviceType": "0x0000",
+        "timeSinceLastMessage": 11504,
+        "deviceEndpoint": {
+          "eui64": "0xDC8E95FFFE2B8968",
+          "endpoint": 2,
+          "clusterInfo": [
+            { "clusterId": "0x0001", "clusterType": "In" },
+            { "clusterId": "0x0006", "clusterType": "In" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0x9CC1",
+        "deviceState": 16,
+        "deviceType": "0x0000",
+        "timeSinceLastMessage": 11504,
+        "deviceEndpoint": {
+          "eui64": "0xDC8E95FFFE2B8968",
+          "endpoint": 3,
+          "clusterInfo": [
+            { "clusterId": "0x0001", "clusterType": "In" },
+            { "clusterId": "0x0006", "clusterType": "In" }
+          ]
+        }
+      },
+      {
+        "nodeId": "0x9CC1",
+        "deviceState": 16,
+        "deviceType": "0x0000",
+        "timeSinceLastMessage": 11504,
+        "deviceEndpoint": {
+          "eui64": "0xDC8E95FFFE2B8968",
+          "endpoint": 4,
+          "clusterInfo": [
+            { "clusterId": "0x0001", "clusterType": "In" },
+            { "clusterId": "0x0006", "clusterType": "In" }
+          ]
+        }
+      }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 359. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "requestID": "add_child_device***20851_1695109888.834175",
+    "typeMessage": "commission",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "addDevice",
+        "data": [
+          {
+            "deviceType": "typeTempSensor",
+            "deviceName": "",
+            "deviceLocate": "",
+            "gatewayID": "8CF681FFFEF006B0",
+            "connectivityType": "zigbee",
+            "deviceID": "0xD4DF",
+            "deviceEUI": "0x60A423FFFE093AE3",
+            "deviceInfo": {
+              "manufacturer": "VNPT",
+              "model": "TS0201",
+              "hwVersion": "1.0",
+              "swVersion": "1.0"
+            },
+            "deviceTrait": {
+              "deviceChild": {
+                "child": 1,
+                "childName": "null",
+                "childInfo": [
+                  { "traitName": "traitBatPercent", "bindDirection": "In" }, // @NOTE trait coresponding to fucking clusterId
+                  { "traitName": "traitBatVoltage", "bindDirection": "In" },
+                  { "traitName": "traitTemperature", "bindDirection": "In" },
+                  { "traitName": "traitHumidity", "bindDirection": "In" }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 360. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      { "command": "zcl global direction 0x0" },
+      { "command": "zcl global read 0x0 0x5" },
+      { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 361. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global direction 0x0" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 362. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global read 0x0 0x5" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 363. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 364. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      { "command": "zcl global direction 0x0" },
+      { "command": "zcl global read 0x1 0x20" },
+      { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 365. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global direction 0x0" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 366. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global read 0x1 0x20" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 367. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "commission",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": { "command": "ackAddDevice" }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 368. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 369. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      {
+        "command": "plugin network-creator-security close-network",
+        "postDelayMs": 100
+      }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 370. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "TS0201",
+          "trait": "traitModel"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 371. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin network-creator-security close-network" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 372. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      { "command": "zcl global direction 0x0" },
+      { "command": "zcl global read 0x1 0x21" },
+      { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 373. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "3.0",
+          "trait": "traitBatVoltage"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 374. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "100.0",
+          "trait": "traitBatPercent"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 375. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      { "command": "zcl global direction 0x0" },
+      { "command": "zcl global read 0x402 0x0" },
+      { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 376. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "30.20",
+          "trait": "traitTemperature"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 377. gw/8CF681FFFEF006B0/executed:
+  { "delayMs": 100 },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 378. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global direction 0x0" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 379. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "76.70",
+          "trait": "traitHumidity"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 380. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global read 0x1 0x21" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 381. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      { "command": "zcl global direction 0x0" },
+      { "command": "zcl global read 0x405 0x0" },
+      { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 382. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 383. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global direction 0x0" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 384. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "100.0",
+          "trait": "traitBatPercent"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 385. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "3.0",
+          "trait": "traitBatVoltage"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 386. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global read 0x402 0x0" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 387. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 388. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      { "command": "zcl global direction 0x1" },
+      { "command": "zcl global read 0x19 0x2" },
+      { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 389. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global direction 0x0" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 390. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global read 0x405 0x0" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 391. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 392. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global direction 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 393. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global read 0x19 0x2" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 394. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 395. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      { "command": "zcl global direction 0x1" },
+      { "command": "zcl global read 0x19 0x7" },
+      { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 396. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global direction 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 397. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global read 0x19 0x7" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 398. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 399. gw/8CF681FFFEF006B0/commands:
+  {
+    "commands": [
+      { "command": "zcl global direction 0x1" },
+      { "command": "zcl global read 0x19 0x8" },
+      { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" }
+    ]
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 400. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global direction 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 401. gw/8CF681FFFEF006B0/executed:
+  { "command": "zcl global read 0x19 0x8" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 402. gw/8CF681FFFEF006B0/executed:
+  { "command": "plugin device-table send {60A423FFFE093AE3} 0x1" },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 403. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0000",
+    "commandId": "0x01",
+    "commandData": "0x0500004206545330323031",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 404. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0000",
+    "attributeId": "0x0005",
+    "attributeBuffer": "0x06545330323031",
+    "attributeDataType": "0x42",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x00"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 405. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "TS0201",
+          "trait": "traitModel"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 406. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "commandId": "0x01",
+    "commandData": "0x200000201E",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 407. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "attributeId": "0x0020",
+    "attributeBuffer": "0x1E",
+    "attributeDataType": "0x20",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x00"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 408. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "commandId": "0x01",
+    "commandData": "0x21000020C8",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 409. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "attributeId": "0x0021",
+    "attributeBuffer": "0xC8",
+    "attributeDataType": "0x20",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x00"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 410. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "3.0",
+          "trait": "traitBatVoltage"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 411. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0402",
+    "commandId": "0x01",
+    "commandData": "0x00000029CC0B",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 412. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0402",
+    "attributeId": "0x0000",
+    "attributeBuffer": "0xCC0B",
+    "attributeDataType": "0x29",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x00"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 413. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "100.0",
+          "trait": "traitBatPercent"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 414. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "30.20",
+          "trait": "traitTemperature"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 415. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0405",
+    "commandId": "0x01",
+    "commandData": "0x00000021F61D",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 416. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0405",
+    "attributeId": "0x0000",
+    "attributeBuffer": "0xF61D",
+    "attributeDataType": "0x21",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x00"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 417. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "76.70",
+          "trait": "traitHumidity"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 418. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "commandId": "0x01",
+    "commandData": "0x020086",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 419. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "attributeId": "0x0002",
+    "attributeBuffer": "0x",
+    "attributeDataType": "0x02",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x86"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 420. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "commandId": "0x01",
+    "commandData": "0x070086",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 421. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": { "deviceEUI": "0x60A423FFFE093AE3", "child": 1 }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 422. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "attributeId": "0x0007",
+    "attributeBuffer": "0x",
+    "attributeDataType": "0x02",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x86"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 423. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "commandId": "0x01",
+    "commandData": "0x070086",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 424. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "attributeId": "0x0007",
+    "attributeBuffer": "0x",
+    "attributeDataType": "0x02",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x86"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 425. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": { "deviceEUI": "0x60A423FFFE093AE3", "child": 1 }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 426. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": { "deviceEUI": "0x60A423FFFE093AE3", "child": 1 }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 427. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0402",
+    "commandId": "0x0A",
+    "commandData": "0x000029AE0B",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 429. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "29.90",
+          "trait": "traitTemperature"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 428. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0402",
+    "attributeId": "0x0000",
+    "attributeBuffer": "0xAE0B",
+    "attributeDataType": "0x29",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 430. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "commandId": "0x01",
+    "commandData": "0x080086",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 431. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "attributeId": "0x0008",
+    "attributeBuffer": "0x",
+    "attributeDataType": "0x02",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x86"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 432. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": { "deviceEUI": "0x60A423FFFE093AE3", "child": 1 }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 433. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0405",
+    "commandId": "0x0A",
+    "commandData": "0x000021F81B",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 434. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0405",
+    "attributeId": "0x0000",
+    "attributeBuffer": "0xF81B",
+    "attributeDataType": "0x21",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 435. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "71.60",
+          "trait": "traitHumidity"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 436. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "commandId": "0x01",
+    "commandData": "0x080086",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 437. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0019",
+    "attributeId": "0x0008",
+    "attributeBuffer": "0x",
+    "attributeDataType": "0x02",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 },
+    "status": "0x86"
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 438. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": { "deviceEUI": "0x60A423FFFE093AE3", "child": 1 }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 439. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "commandId": "0x0A",
+    "commandData": "0x2000201E210020C8",
+    "clusterSpecific": false,
+    "deviceID": "0xD4DF",
+    "deviceEuiFlag": true,
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 440. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "attributeId": "0x0020",
+    "attributeBuffer": "0x1E",
+    "attributeDataType": "0x20",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 442. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "3.0",
+          "trait": "traitBatVoltage"
+        }
+      }
+    }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 441. gw/8CF681FFFEF006B0/zclresponse:
+  {
+    "clusterId": "0x0001",
+    "attributeId": "0x0021",
+    "attributeBuffer": "0xC8",
+    "attributeDataType": "0x20",
+    "deviceEndpoint": { "eui64": "0x60A423FFFE093AE3", "endpoint": 1 }
+  },
+
+  // Time: 14:48:39    ---    Date: 19-9
+  // 443. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x60A423FFFE093AE3",
+          "child": 1,
+          "value": "100.0",
+          "trait": "traitBatPercent"
+        }
+      }
+    }
+  }
+]

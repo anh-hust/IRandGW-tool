@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRGen</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form>
+      <!-- Category option -->
+      <div class="column">
+        <label for="category">Category</label><br />
+        <select name="categorySel" id="categorySel">
+          <!-- <optgroup label="-- Select one --">
+            <option value="tv">TV</option>
+            <option value="fan">Fan</option>
+            <option value="light">Light</option>
+            <option value="tv-Box">TV Box</option>
+            <option value="other">Other</option>
+          </optgroup> --></select
+        ><br /><br />
+        <input class="otherCat" style="visibility: hidden" />
+      </div>
+      <!-- Brand option -->
+      <div class="column">
+        <label for="brand">Brand</label><br />
+        <select name="brandSel" id="brandSel">
+          <!-- <optgroup label="-- Select one --">
+            <option value="sony">Sony</option>
+            <option value="lg">LG</option>
+            <option value="toshiba">Toshiba</option>
+            <option value="panasonic">Panasonic</option>
+            <option value="other">Other</option>
+          </optgroup> --></select
+        ><br /><br />
+        <input class="otherBr" style="visibility: hidden" />
+      </div>
+      <!-- Model input -->
+      <div class="column">
+        <label>Model</label><br />
+        <input class="model" />
+      </div>
+      <!-- Button option -->
+      <div class="column">
+        <label for="button">Button</label><br />
+        <select name="buttonSel" id="buttonSel">
+          <!-- <optgroup label="Button">
+            <option value="power">Power</option>
+            <option value="ch+">CH+</option>
+            <option value="ch-">CH-</option>
+            <option value="vol+">Volume+</option>
+            <option value="vol-">Volume-</option>
+            <option value="other">Other</option>
+          </optgroup> --></select
+        ><br /><br />
+        <input
+          class="otherBtn"
+          style="visibility: hidden"
+          onkeydown="handleTabKeyPress(event)"
+        />
+      </div>
+      <!-- Name button option -->
+      <div class="column">
+        <label>Name of button</label><br />
+        <input class="nameOfBtn" />
+      </div>
+    </form>
+
+    <div class="btn">
+      <!-- Button -->
+      <input type="submit" value="Start listen" id="listenBtn" />
+      <input type="submit" value="Override" id="overrideBtn" />
+      <input type="submit" value="Cancel" id="cancelBtn" />
+      <input type="submit" value="Delete" id="deleteBtn" />
+      <input type="submit" value="Check" id="checkBtn" />
+      <input type="submit" value="Check again" id="checkAgainBtn" />
+      <input type="submit" value="Delete" id="deleteTestedBtn" />
+      <input type="submit" value="Send raw" id="sendRawBtn" />
+
+      <div id="status"></div>
+      <div id="content"></div>
+    </div>
+    <script src="./teamplateData.js"></script>
+    <script src="./initFE.js"></script>
+    <script src="./FEmanipulate.js"></script>
+    <script src="./handleRequest.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

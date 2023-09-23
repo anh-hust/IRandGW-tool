@@ -1,0 +1,481 @@
+[// Time: 10:48:16    ---    Date: 22-9
+// 1. gw/540F57FFFEFA3290/heartbeat:
+{"networkUp":true,"networkPanId":"0x4763","radioTxPower":20,"radioChannel":20},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 2. keepAlive_bluetoothHandle:
+{"typeMessage":"keepAlive","idProcess":"bluetoothHandle"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 3. keepAlive_response_bluetoothHandle:
+{"typeMessage":"keepAlive","command":"keepAliveResponse","idProcess":"bluetoothHandle"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 4. MessageOutSideAgentLocalToMobileDeviceStatus:
+hello,
+
+// Time: 10:48:16    ---    Date: 22-9
+// 5. DEVICE_TOKEN_TRIGGER:
+{"typeMessage":"smartConfigDone"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 6. LED_CONTROL:
+{"ConnectToInternet":"On"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 7. MessageOutSideSyncDataToDataManagement:
+{"requestID":"","typeMessage":"inprogress","dataMessage":{"properties":{"command":"deviceTimeStamp","data":{"status":0}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 8. keepAlive_bleAdapter:
+{"typeMessage":"keepAlive","idProcess":"bleAdapter"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 9. keepAlive_response_bleAdapter:
+{ "typeMessage" : "keepAlive", "command" : "keepAliveResponse", "idProcess" : "bleAdapter"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 10. MessageOutSideSyncDataToDataManagement:
+{"requestID":55,"typeMessage":"requestDatabase","dataMessage":{"properties":{"command":"listDevice","data":{"databaseType":"dbZombie"}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 11. MessageOutSideDataManagementToDeviceManagement:
+{"requestID":55,"status":"success","typeMessage":"responsetDatabase","dataMessage":{"properties":{"command":"listDevice","data":{"databaseType":"dbZombie","value":[[{"deviceID":"0x78E6","deviceEUI":"0xBC33ACFFFEDB6F47"}],[],[]]}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 12. MessageOutSideDataManagementToSyncData:
+{"requestID":55,"status":"success","typeMessage":"responsetDatabase","dataMessage":{"properties":{"command":"listDevice","data":{"databaseType":"dbZombie","value":[[{"deviceID":"0x78E6","deviceEUI":"0xBC33ACFFFEDB6F47"}],[],[]]}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 14. MessageOutSideDataManagementToSyncData:
+{"requestID":91,"status":"success","typeMessage":"responsetDatabase","dataMessage":{"properties":{"command":"deviceTimeStamp","data":{"deviceEUI":"0xBC33ACFFFEDB6F47","value":[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 15. MessageOutSideSyncDataToDataManagement:
+{"requestID":"","typeMessage":"inprogress","dataMessage":{"properties":{"command":"deviceTimeStamp","data":{"status":1}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 13. MessageOutSideSyncDataToDataManagement:
+{"requestID":91,"typeMessage":"requestDatabase","dataMessage":{"properties":{"command":"deviceTimeStamp","data":{"deviceEUI":"0xBC33ACFFFEDB6F47"}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 16. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:ae":{"rr":true,"ct":"20230922T104830","poa":["mqtt://S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"],"aei":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","ty":2,"ri":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","lt":"20230922T104830","pi":"/in-cse","api":"vn.vnpttech.agritech","rn":"ONEHome_VirtualDevice_3OAt_1695056700016","et":"19700101T164536"}},"rqi":"m_creartAE0.30054774694144726","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 17. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:ae":{"rr":true,"ct":"20230922T104830","poa":["mqtt://S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"],"aei":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","ty":2,"ri":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","lt":"20230922T104830","pi":"/in-cse","api":"vn.vnpttech.agritech","rn":"ONEHome_VirtualDevice_3OAt_1695056700016","et":"19700101T164536"}},"rqi":"m_creartAE0.30054774694144726","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 18. gw/540F57FFFEFA3290/heartbeat:
+{"networkUp":true,"networkPanId":"0x4763","radioTxPower":20,"radioChannel":20},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 19. GET_RSSI:
+{"signal":"-36 dBm"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 20. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cnt":{"st":0,"mia":0,"ty":3,"lt":"20230922T104835","mni":10,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","ct":"20230922T104835","cbs":0,"la":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_config_platform/la","ri":"cnt-4e071ec7-a7ff-4a99-8624-b2768df00f44","pi":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rn":"cnt_config_platform","ol":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_config_platform/ol","mbs":64000,"cni":0}},"rqi":"m_createCont_platformCommand0.4837420047260821","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 21. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cnt":{"st":0,"mia":0,"ty":3,"lt":"20230922T104835","mni":10,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","ct":"20230922T104835","cbs":0,"la":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_config_platform/la","ri":"cnt-4e071ec7-a7ff-4a99-8624-b2768df00f44","pi":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rn":"cnt_config_platform","ol":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_config_platform/ol","mbs":64000,"cni":0}},"rqi":"m_createCont_platformCommand0.4837420047260821","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 22. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:sub":{"ct":"20230922T104837","ty":23,"ri":"sub-617a3cab-da79-4032-9d7f-6992a5838672","nu":["/in-cse/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"],"lt":"20230922T104837","pi":"cnt-4e071ec7-a7ff-4a99-8624-b2768df00f44","enc":{"net":[3]},"rn":"m_createSub5885","nct":1,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"m_createSub_platformCommand0.7134730778634548","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 23. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:sub":{"ct":"20230922T104837","ty":23,"ri":"sub-617a3cab-da79-4032-9d7f-6992a5838672","nu":["/in-cse/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"],"lt":"20230922T104837","pi":"cnt-4e071ec7-a7ff-4a99-8624-b2768df00f44","enc":{"net":[3]},"rn":"m_createSub5885","nct":1,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"m_createSub_platformCommand0.7134730778634548","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 24. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cnt":{"st":0,"mia":0,"ty":3,"lt":"20230922T104842","mni":10,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","ct":"20230922T104842","cbs":0,"la":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command/la","ri":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","pi":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rn":"cnt_command","ol":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command/ol","mbs":64000,"cni":0}},"rqi":"m_createCont_appCommand0.7435640331823379","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 25. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cnt":{"st":0,"mia":0,"ty":3,"lt":"20230922T104842","mni":10,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","ct":"20230922T104842","cbs":0,"la":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command/la","ri":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","pi":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rn":"cnt_command","ol":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command/ol","mbs":64000,"cni":0}},"rqi":"m_createCont_appCommand0.7435640331823379","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 26. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:sub":{"ct":"20230922T104844","ty":23,"ri":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","nu":["/in-cse/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"],"lt":"20230922T104844","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","enc":{"net":[3]},"rn":"m_createSub8558","nct":1,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"m_createSub_appCommand0.9582169067580253","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 27. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:sub":{"ct":"20230922T104844","ty":23,"ri":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","nu":["/in-cse/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"],"lt":"20230922T104844","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","enc":{"net":[3]},"rn":"m_createSub8558","nct":1,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"m_createSub_appCommand0.9582169067580253","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 28. gw/540F57FFFEFA3290/heartbeat:
+{"networkUp":true,"networkPanId":"0x4763","radioTxPower":20,"radioChannel":20},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 29. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cnt":{"st":0,"mia":0,"ty":3,"lt":"20230922T104849","mni":10,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","ct":"20230922T104849","cbs":0,"la":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_telemetry/la","ri":"cnt-c801a3f2-5f29-4ba3-b736-8ed1fc3ea34b","pi":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rn":"cnt_telemetry","ol":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_telemetry/ol","mbs":64000,"cni":0}},"rqi":"m_createCont_telemetry0.930952867725864","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 30. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cnt":{"st":0,"mia":0,"ty":3,"lt":"20230922T104849","mni":10,"et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","ct":"20230922T104849","cbs":0,"la":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_telemetry/la","ri":"cnt-c801a3f2-5f29-4ba3-b736-8ed1fc3ea34b","pi":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rn":"cnt_telemetry","ol":"in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_telemetry/ol","mbs":64000,"cni":0}},"rqi":"m_createCont_telemetry0.930952867725864","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 31. TEST_sendConnected:
+{"fr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","op":1,"pc":{"m2m:cin":{"cnf":"text/plains:0","con":"{\"deviceId\":\"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71\",\"deviceName\":\"ONEHome_VirtualDevice_3OAt_1695056700016\",\"status\":\"connected\",\"resetFactory\":0,\"macWifi\":\"14:f5:f9:9e:ef:c3\\n\",\"macEthernet\":\"\\n\",\"serial\":\"1302846130000afdev\\n\",\"ipLocal\":\"192.168.88.54\",\"firmwareVersion\":\"1.1.8\",\"buzzerState\":{\"state\":1,\"volume\":4},\"endDeviceStatus\":\"\",\"bluetoothData\":{\"networkStatus\":1,\"key\":{\"appKey\":\"0088cf7238c19ba8515a0088cf7238c1\",\"netKey\":\"0088cf7238c10088cf7238c141cad635\"}}}"}},"rqi":"cnt_device_status0.989997886819765","to":"/in-cse/in-name/main-VNPT_Tech_SmartHome_UAT_Cam/cnt_device_status","ty":4,"tkns":["eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJ0ay02OTQwMTY2Yi0wOGMzLTQ5ODctOGZjZC0yNDQ2OGU1MGYyNDciLCJleHAiOjE3MjA5NzY3MDB9.yXBkTeRWV8lQdYF912H0Gt7L3BUURkdX8LD7px4CZiM"]},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 32. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":471,"ct":"20230922T104851","st":3346,"con":"{\"deviceId\":\"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71\",\"deviceName\":\"ONEHome_VirtualDevice_3OAt_1695056700016\",\"status\":\"connected\",\"resetFactory\":0,\"macWifi\":\"14:f5:f9:9e:ef:c3\\n\",\"macEthernet\":\"\\n\",\"serial\":\"1302846130000afdev\\n\",\"ipLocal\":\"192.168.88.54\",\"firmwareVersion\":\"1.1.8\",\"buzzerState\":{\"state\":1,\"volume\":4},\"endDeviceStatus\":\"\",\"bluetoothData\":{\"networkStatus\":1,\"key\":{\"appKey\":\"0088cf7238c19ba8515a0088cf7238c1\",\"netKey\":\"0088cf7238c10088cf7238c141cad635\"}}}","ty":4,"ri":"cin-5532b089-f345-4d76-8121-3cace34a7f76","lt":"20230922T104851","pi":"cnt-e21c352b-77c9-4019-8ebc-4ed03996eb55","cnf":"text/plains:0","rn":"cin_5532b089-f345-4d76-8121-3cace34a7f76","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"cnt_device_status0.989997886819765","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 34. LED_CONTROL:
+{"SmartConfigSuccess":"On"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 33. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":471,"ct":"20230922T104851","st":3346,"con":"{\"deviceId\":\"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71\",\"deviceName\":\"ONEHome_VirtualDevice_3OAt_1695056700016\",\"status\":\"connected\",\"resetFactory\":0,\"macWifi\":\"14:f5:f9:9e:ef:c3\\n\",\"macEthernet\":\"\\n\",\"serial\":\"1302846130000afdev\\n\",\"ipLocal\":\"192.168.88.54\",\"firmwareVersion\":\"1.1.8\",\"buzzerState\":{\"state\":1,\"volume\":4},\"endDeviceStatus\":\"\",\"bluetoothData\":{\"networkStatus\":1,\"key\":{\"appKey\":\"0088cf7238c19ba8515a0088cf7238c1\",\"netKey\":\"0088cf7238c10088cf7238c141cad635\"}}}","ty":4,"ri":"cin-5532b089-f345-4d76-8121-3cace34a7f76","lt":"20230922T104851","pi":"cnt-e21c352b-77c9-4019-8ebc-4ed03996eb55","cnf":"text/plains:0","rn":"cin_5532b089-f345-4d76-8121-3cace34a7f76","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"cnt_device_status0.989997886819765","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 35. TEST_receive2001CntTelemetryAndCommand:
+{"op":5,"pc":{"m2m:sgn":{"sur":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","sud":false,"nev":{"rep":{"m2m:sub":{"ct":"20230922T104852","ty":23,"ri":"sub-2484144c-7139-4367-974a-058d1a2eb3ed","nu":["Sb291bd0d-0c40-4429-bb1b-632aceb9d95b"],"lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","enc":{"net":[3]},"rn":"sub_cnt_command","nct":1,"et":"19700101T164536","cr":"Sb291bd0d-0c40-4429-bb1b-632aceb9d95b"}},"net":3},"cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"to":"/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rqi":"74c80716-c2fb-4970-86b3-2a97641e711d","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 36. TEST_receive2001CntTelemetryAndCommand:
+{"op":5,"pc":{"m2m:sgn":{"sur":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","sud":false,"nev":{"rep":{"m2m:cin":{"cs":273,"ct":"20230922T104852","st":1,"con":"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"data\":\"{\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"scene\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\"}}}}}\",\"commandType\":\"ruleEngine\",\"recordId\":\"delete_rule***null\"}","ty":4,"ri":"cin-5c98e624-0516-4c78-b92d-44896fe12de9","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_5c98e624-0516-4c78-b92d-44896fe12de9","et":"19700101T164536","cr":"Sb291bd0d-0c40-4429-bb1b-632aceb9d95b"}},"net":3},"cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"to":"/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rqi":"75d0ba0c-e895-419c-9bae-744e7f1010d2","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 37. TEST_receive2001CntTelemetryAndCommand:
+{"op":5,"pc":{"m2m:sgn":{"sur":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","sud":false,"nev":{"rep":{"m2m:cin":{"cs":284,"ct":"20230922T104852","st":2,"con":"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"data\":\"{\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"automation\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\"}}}}}\",\"commandType\":\"ruleEngine\",\"recordId\":\"delete_automation***null\"}","ty":4,"ri":"cin-65d6b76c-d4c5-4c13-b2cd-8a7ca7d9327b","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_65d6b76c-d4c5-4c13-b2cd-8a7ca7d9327b","et":"19700101T164536","cr":"Sb291bd0d-0c40-4429-bb1b-632aceb9d95b"}},"net":3},"cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"to":"/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rqi":"6860c5cc-c08c-4f10-ab56-4df41bf7b523","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 38. MessageOutSideAgentToAgentProcessCommand:
+{"commandId":"deleteRule","name":"deleteRule","data":"{\"typeMessage\":\"ruleEngine\",\"dataMessage\":{\"properties\":{\"command\":\"deleteRule\",\"data\":{\"typeRule\":\"scene\",\"info\":{\"ruleID\":\"all\"}}}}}","commandType":"ruleEngine","recordId":"delete_rule***null"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 39. MessageOutSideAgentToAgentProcessCommand:
+{"commandId":"deleteRule","name":"deleteRule","data":"{\"typeMessage\":\"ruleEngine\",\"dataMessage\":{\"properties\":{\"command\":\"deleteRule\",\"data\":{\"typeRule\":\"automation\",\"info\":{\"ruleID\":\"all\"}}}}}","commandType":"ruleEngine","recordId":"delete_automation***null"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 40. MessageOutSideAgentProcessToRuleEngine:
+{"typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"scene","info":{"ruleID":"all"}}}},"requestID":"delete_rule***null"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 41. MessageInSideRuleEngineToScene:
+{"command":"deleteRule","data":{"typeRule":"scene","info":{"ruleID":"all","requestID":"delete_rule***null"}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 42. MessageOutSideAgentProcessToRuleEngine:
+{"typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"automation","info":{"ruleID":"all"}}}},"requestID":"delete_automation***null"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 43. TEST_receive2001CntTelemetryAndCommand:
+{"op":5,"pc":{"m2m:sgn":{"sur":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","sud":false,"nev":{"rep":{"m2m:cin":{"cs":259,"ct":"20230922T104852","st":3,"con":"{\"commandId\":\"listDevice\",\"name\":\"listDevice\",\"data\":\"{\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"connectivityType\\\":\\\"all\\\",\\\"properties\\\":{\\\"command\\\":\\\"listDevice\\\"}}}\",\"commandType\":\"requestData\",\"recordId\":\"get_list_device***20851_1695354532312\"}","ty":4,"ri":"cin-dcfa4017-c41d-4d85-9941-2989f341e805","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_dcfa4017-c41d-4d85-9941-2989f341e805","et":"19700101T164536","cr":"Sb291bd0d-0c40-4429-bb1b-632aceb9d95b"}},"net":3},"cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"to":"/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rqi":"b296d35b-70d4-488f-a607-986f223449cb","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 44. MessageInSideRuleEngineToAutomation:
+{"command":"deleteRule","data":{"typeRule":"automation","info":{"ruleID":"all","requestID":"delete_automation***null"}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 45. MessageInSideSceneToRuleEngine:
+{"requestID":"delete_rule***null","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"scene","info":{"ruleID":"all","status":"success"}}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 46. MessageOutSideAgentToAgentProcessCommand:
+{"commandId":"listDevice","name":"listDevice","data":"{\"typeMessage\":\"requestData\",\"dataMessage\":{\"connectivityType\":\"all\",\"properties\":{\"command\":\"listDevice\"}}}","commandType":"requestData","recordId":"get_list_device***20851_1695354532312"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 47. MessageOutSideAgentProcessToDeviceManagement:
+{"typeMessage":"requestData","dataMessage":{"connectivityType":"all","properties":{"command":"listDevice"}},"requestID":"get_list_device***20851_1695354532312"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 48. MessageOutSideRuleEngineToAgentProcess:
+{"requestID":"delete_rule***null","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"scene","info":{"ruleID":"all","status":"success"}}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 49. MessageOutSideAgentProcessToAgentCommand:
+"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354532577,\"responseData\":\"{\\\"requestID\\\":\\\"delete_rule***null\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"scene\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\",\\\"status\\\":\\\"success\\\"}}}}}\",\"recordId\":\"delete_rule***null\"}",
+
+// Time: 10:48:16    ---    Date: 22-9
+// 50. MessageInSideAutomationToRuleEngine:
+{"requestID":"delete_automation***null","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"automation","info":{"ruleID":"all","status":"success"}}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 51. MessageOutSideRuleEngineToAgentProcess:
+{"requestID":"delete_automation***null","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"automation","info":{"ruleID":"all","status":"success"}}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 53. MessageOutSideAgentLocalToMobileCommand:
+{"commandId":"deleteRule","name":"deleteRule","commandType":"ruleEngine","status":"5","updateTime":1695354532585,"responseData":{"requestID":"delete_rule***null","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"scene","info":{"ruleID":"all","status":"success"}}}}},"recordId":"delete_rule***null"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 52. MessageOutSideAgentProcessToAgentLocalCommand:
+{"commandId":"deleteRule","name":"deleteRule","commandType":"ruleEngine","status":"5","updateTime":1695354532585,"responseData":{"requestID":"delete_rule***null","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"scene","info":{"ruleID":"all","status":"success"}}}}},"recordId":"delete_rule***null"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 54. MessageOutSideDeviceManagementToDataManagement:
+{"requestID":"get_list_device***20851_1695354532312","typeMessage":"requestDatabase","dataMessage":{"connectivityType":"all","properties":{"command":"listDevice","data":{"databaseType":"dbTree"}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 55. TEST_sendCntCommand:
+{"fr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","op":1,"pc":{"m2m:cin":{"cnf":"text/plains:0","con":"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354532577,\"responseData\":\"{\\\"requestID\\\":\\\"delete_rule***null\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"scene\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\",\\\"status\\\":\\\"success\\\"}}}}}\",\"recordId\":\"delete_rule***null\"}"}},"rqi":0.6151228086091578,"to":"/in-cse/in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command","ty":4,"tkns":["eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJ0ay02OTQwMTY2Yi0wOGMzLTQ5ODctOGZjZC0yNDQ2OGU1MGYyNDciLCJleHAiOjE3MjA5NzY3MDB9.yXBkTeRWV8lQdYF912H0Gt7L3BUURkdX8LD7px4CZiM"]},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 56. MessageOutSideAgentProcessToAgentCommand:
+"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354532614,\"responseData\":\"{\\\"requestID\\\":\\\"delete_automation***null\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"automation\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\",\\\"status\\\":\\\"success\\\"}}}}}\",\"recordId\":\"delete_automation***null\"}",
+
+// Time: 10:48:16    ---    Date: 22-9
+// 57. MessageOutSideAgentProcessToAgentLocalCommand:
+{"commandId":"deleteRule","name":"deleteRule","commandType":"ruleEngine","status":"5","updateTime":1695354532616,"responseData":{"requestID":"delete_automation***null","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"automation","info":{"ruleID":"all","status":"success"}}}}},"recordId":"delete_automation***null"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 58. MessageOutSideAgentLocalToMobileCommand:
+{"commandId":"deleteRule","name":"deleteRule","commandType":"ruleEngine","status":"5","updateTime":1695354532616,"responseData":{"requestID":"delete_automation***null","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"deleteRule","data":{"typeRule":"automation","info":{"ruleID":"all","status":"success"}}}}},"recordId":"delete_automation***null"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 59. TEST_sendCntCommand:
+{"fr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","op":1,"pc":{"m2m:cin":{"cnf":"text/plains:0","con":"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354532614,\"responseData\":\"{\\\"requestID\\\":\\\"delete_automation***null\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"automation\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\",\\\"status\\\":\\\"success\\\"}}}}}\",\"recordId\":\"delete_automation***null\"}"}},"rqi":0.7472105151973665,"to":"/in-cse/in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command","ty":4,"tkns":["eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJ0ay02OTQwMTY2Yi0wOGMzLTQ5ODctOGZjZC0yNDQ2OGU1MGYyNDciLCJleHAiOjE3MjA5NzY3MDB9.yXBkTeRWV8lQdYF912H0Gt7L3BUURkdX8LD7px4CZiM"]},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 60. MessageOutSideDataManagementToDeviceManagement:
+{"requestID":"get_list_device***20851_1695354532312","status":"success","typeMessage":"responsetDatabase","dataMessage":{"connecctivityType":"all","properties":{"command":"listDevice","data":{"databaseType":"dbTree","value":[{"deviceType":"typeIASContact","deviceName":"","deviceLocate":"","gatewayID":"540F57FFFEFA3290","connectivityType":"zigbee","deviceID":"0x78E6","deviceEUI":"0xBC33ACFFFEDB6F47","deviceInfo":{"manufacturer":"VNPT","model":"TS0203","hwVersion":"1.0","swVersion":"1.0"},"deviceTrait":{"deviceChild":[{"child":1,"childName":"null","childInfo":[{"traitName":"traitBatPercent","bindDirection":"In","value":"null"},{"traitName":"traitBatVoltage","bindDirection":"In","value":"null"},{"traitName":"traitAlarmTrigger","bindDirection":"In","value":"null"},{"traitName":"traitOpenClose","bindDirection":"In","value":"null"}]}],"numChild":"1"},"customData":{"data1":"null","data2":"null","data3":"null"},"_id":"u4BxRQfgWhPwQVCi"}]}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 61. MessageOutSideDeviceManagementToAgentProcess:
+{"requestID":"get_list_device***20851_1695354532312","status":"success","typeMessage":"requestData","dataMessage":{"properties":{"command":"listDevice","data":[{"deviceType":"typeIASContact","deviceName":"","deviceLocate":"","gatewayID":"540F57FFFEFA3290","connectivityType":"zigbee","deviceID":"0x78E6","deviceEUI":"0xBC33ACFFFEDB6F47","deviceInfo":{"manufacturer":"VNPT","model":"TS0203","hwVersion":"1.0","swVersion":"1.0"},"deviceTrait":{"deviceChild":[{"child":1,"childName":"null","childInfo":[{"traitName":"traitBatPercent","bindDirection":"In","value":"null"},{"traitName":"traitBatVoltage","bindDirection":"In","value":"null"},{"traitName":"traitAlarmTrigger","bindDirection":"In","value":"null"},{"traitName":"traitOpenClose","bindDirection":"In","value":"null"}]}],"numChild":"1"},"customData":{"data1":"null","data2":"null","data3":"null"},"_id":"u4BxRQfgWhPwQVCi"}]}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 62. MessageOutSideAgentProcessToAgentCommand:
+"{\"commandId\":\"listDevice\",\"name\":\"listDevice\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1695354532691,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_device***20851_1695354532312\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"listDevice\\\",\\\"data\\\":[{\\\"deviceType\\\":\\\"typeIASContact\\\",\\\"deviceName\\\":\\\"\\\",\\\"deviceLocate\\\":\\\"\\\",\\\"gatewayID\\\":\\\"540F57FFFEFA3290\\\",\\\"connectivityType\\\":\\\"zigbee\\\",\\\"deviceID\\\":\\\"0x78E6\\\",\\\"deviceEUI\\\":\\\"0xBC33ACFFFEDB6F47\\\",\\\"deviceInfo\\\":{\\\"manufacturer\\\":\\\"VNPT\\\",\\\"model\\\":\\\"TS0203\\\",\\\"hwVersion\\\":\\\"1.0\\\",\\\"swVersion\\\":\\\"1.0\\\"},\\\"deviceTrait\\\":{\\\"deviceChild\\\":[{\\\"child\\\":1,\\\"childName\\\":\\\"null\\\",\\\"childInfo\\\":[{\\\"traitName\\\":\\\"traitBatPercent\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitBatVoltage\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitAlarmTrigger\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitOpenClose\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"}]}],\\\"numChild\\\":\\\"1\\\"},\\\"customData\\\":{\\\"data1\\\":\\\"null\\\",\\\"data2\\\":\\\"null\\\",\\\"data3\\\":\\\"null\\\"},\\\"_id\\\":\\\"u4BxRQfgWhPwQVCi\\\"}]}}}\",\"recordId\":\"get_list_device***20851_1695354532312\"}",
+
+// Time: 10:48:16    ---    Date: 22-9
+// 63. TEST_receive2001CntTelemetryAndCommand:
+{"op":5,"pc":{"m2m:sgn":{"sur":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","sud":false,"nev":{"rep":{"m2m:cin":{"cs":318,"ct":"20230922T104852","st":4,"con":"{\"commandId\":\"configGatewayData\",\"name\":\"configGatewayData\",\"data\":\"{\\\"typeMessage\\\":\\\"config\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"configGatewayData\\\",\\\"data\\\":{\\\"configType\\\":\\\"gatewayTimeZone\\\",\\\"value\\\":\\\"+7\\\"}}}}\",\"commandType\":\"config\",\"recordId\":\"config_time_zone_gateway***20851_1695354532473###99\"}","ty":4,"ri":"cin-03a61ae9-e5b0-46ae-b5d9-0ae5bf02c3e7","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_03a61ae9-e5b0-46ae-b5d9-0ae5bf02c3e7","et":"19700101T164536","cr":"Sb291bd0d-0c40-4429-bb1b-632aceb9d95b"}},"net":3},"cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"to":"/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rqi":"549c01ec-3cef-4158-ad2d-1c8449e626d1","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 64. MessageOutSideAgentProcessToAgentLocalCommand:
+{"commandId":"listDevice","name":"listDevice","commandType":"requestData","status":"5","updateTime":1695354532700,"responseData":{"requestID":"get_list_device***20851_1695354532312","status":"success","typeMessage":"requestData","dataMessage":{"properties":{"command":"listDevice","data":[{"deviceType":"typeIASContact","deviceName":"","deviceLocate":"","gatewayID":"540F57FFFEFA3290","connectivityType":"zigbee","deviceID":"0x78E6","deviceEUI":"0xBC33ACFFFEDB6F47","deviceInfo":{"manufacturer":"VNPT","model":"TS0203","hwVersion":"1.0","swVersion":"1.0"},"deviceTrait":{"deviceChild":[{"child":1,"childName":"null","childInfo":[{"traitName":"traitBatPercent","bindDirection":"In","value":"null"},{"traitName":"traitBatVoltage","bindDirection":"In","value":"null"},{"traitName":"traitAlarmTrigger","bindDirection":"In","value":"null"},{"traitName":"traitOpenClose","bindDirection":"In","value":"null"}]}],"numChild":"1"},"customData":{"data1":"null","data2":"null","data3":"null"},"_id":"u4BxRQfgWhPwQVCi"}]}}},"recordId":"get_list_device***20851_1695354532312"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 65. MessageOutSideAgentLocalToMobileCommand:
+{"commandId":"listDevice","name":"listDevice","commandType":"requestData","status":"5","updateTime":1695354532700,"responseData":{"requestID":"get_list_device***20851_1695354532312","status":"success","typeMessage":"requestData","dataMessage":{"properties":{"command":"listDevice","data":[{"deviceType":"typeIASContact","deviceName":"","deviceLocate":"","gatewayID":"540F57FFFEFA3290","connectivityType":"zigbee","deviceID":"0x78E6","deviceEUI":"0xBC33ACFFFEDB6F47","deviceInfo":{"manufacturer":"VNPT","model":"TS0203","hwVersion":"1.0","swVersion":"1.0"},"deviceTrait":{"deviceChild":[{"child":1,"childName":"null","childInfo":[{"traitName":"traitBatPercent","bindDirection":"In","value":"null"},{"traitName":"traitBatVoltage","bindDirection":"In","value":"null"},{"traitName":"traitAlarmTrigger","bindDirection":"In","value":"null"},{"traitName":"traitOpenClose","bindDirection":"In","value":"null"}]}],"numChild":"1"},"customData":{"data1":"null","data2":"null","data3":"null"},"_id":"u4BxRQfgWhPwQVCi"}]}}},"recordId":"get_list_device***20851_1695354532312"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 66. TEST_sendCntCommand:
+{"fr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","op":1,"pc":{"m2m:cin":{"cnf":"text/plains:0","con":"{\"commandId\":\"listDevice\",\"name\":\"listDevice\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1695354532691,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_device***20851_1695354532312\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"listDevice\\\",\\\"data\\\":[{\\\"deviceType\\\":\\\"typeIASContact\\\",\\\"deviceName\\\":\\\"\\\",\\\"deviceLocate\\\":\\\"\\\",\\\"gatewayID\\\":\\\"540F57FFFEFA3290\\\",\\\"connectivityType\\\":\\\"zigbee\\\",\\\"deviceID\\\":\\\"0x78E6\\\",\\\"deviceEUI\\\":\\\"0xBC33ACFFFEDB6F47\\\",\\\"deviceInfo\\\":{\\\"manufacturer\\\":\\\"VNPT\\\",\\\"model\\\":\\\"TS0203\\\",\\\"hwVersion\\\":\\\"1.0\\\",\\\"swVersion\\\":\\\"1.0\\\"},\\\"deviceTrait\\\":{\\\"deviceChild\\\":[{\\\"child\\\":1,\\\"childName\\\":\\\"null\\\",\\\"childInfo\\\":[{\\\"traitName\\\":\\\"traitBatPercent\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitBatVoltage\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitAlarmTrigger\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitOpenClose\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"}]}],\\\"numChild\\\":\\\"1\\\"},\\\"customData\\\":{\\\"data1\\\":\\\"null\\\",\\\"data2\\\":\\\"null\\\",\\\"data3\\\":\\\"null\\\"},\\\"_id\\\":\\\"u4BxRQfgWhPwQVCi\\\"}]}}}\",\"recordId\":\"get_list_device***20851_1695354532312\"}"}},"rqi":0.32300624600611627,"to":"/in-cse/in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command","ty":4,"tkns":["eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJ0ay02OTQwMTY2Yi0wOGMzLTQ5ODctOGZjZC0yNDQ2OGU1MGYyNDciLCJleHAiOjE3MjA5NzY3MDB9.yXBkTeRWV8lQdYF912H0Gt7L3BUURkdX8LD7px4CZiM"]},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 67. MessageOutSideAgentToAgentProcessCommand:
+{"commandId":"configGatewayData","name":"configGatewayData","data":"{\"typeMessage\":\"config\",\"dataMessage\":{\"properties\":{\"command\":\"configGatewayData\",\"data\":{\"configType\":\"gatewayTimeZone\",\"value\":\"+7\"}}}}","commandType":"config","recordId":"config_time_zone_gateway***20851_1695354532473###99"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 68. MessageOutSideAgentProcessToDeviceManagement:
+{"typeMessage":"config","dataMessage":{"properties":{"command":"configGatewayData","data":{"configType":"gatewayTimeZone","value":"+7"}}},"requestID":"config_time_zone_gateway***20851_1695354532473###99"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 69. MessageOutSideDeviceManagementToHardwareAssistant:
+{"requestID":"config_time_zone_gateway***20851_1695354532473###99","typeMessage":"requestHardware","dataMessage":{"properties":{"command":"configGatewayData","data":{"configType":"gatewayTimeZone","value":"+7"}}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 70. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":404,"ct":"20230922T104852","st":5,"con":"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354532577,\"responseData\":\"{\\\"requestID\\\":\\\"delete_rule***null\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"scene\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\",\\\"status\\\":\\\"success\\\"}}}}}\",\"recordId\":\"delete_rule***null\"}","ty":4,"ri":"cin-c1339672-4cc7-410d-b725-33ff70133c51","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_c1339672-4cc7-410d-b725-33ff70133c51","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.6151228086091578","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 71. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":404,"ct":"20230922T104852","st":5,"con":"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354532577,\"responseData\":\"{\\\"requestID\\\":\\\"delete_rule***null\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"scene\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\",\\\"status\\\":\\\"success\\\"}}}}}\",\"recordId\":\"delete_rule***null\"}","ty":4,"ri":"cin-c1339672-4cc7-410d-b725-33ff70133c51","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_c1339672-4cc7-410d-b725-33ff70133c51","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.6151228086091578","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 72. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":421,"ct":"20230922T104852","st":6,"con":"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354532614,\"responseData\":\"{\\\"requestID\\\":\\\"delete_automation***null\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"automation\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\",\\\"status\\\":\\\"success\\\"}}}}}\",\"recordId\":\"delete_automation***null\"}","ty":4,"ri":"cin-94b06230-a19a-4120-b610-d885d8dbacbd","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_94b06230-a19a-4120-b610-d885d8dbacbd","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.7472105151973665","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 73. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":421,"ct":"20230922T104852","st":6,"con":"{\"commandId\":\"deleteRule\",\"name\":\"deleteRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354532614,\"responseData\":\"{\\\"requestID\\\":\\\"delete_automation***null\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deleteRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"automation\\\",\\\"info\\\":{\\\"ruleID\\\":\\\"all\\\",\\\"status\\\":\\\"success\\\"}}}}}\",\"recordId\":\"delete_automation***null\"}","ty":4,"ri":"cin-94b06230-a19a-4120-b610-d885d8dbacbd","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_94b06230-a19a-4120-b610-d885d8dbacbd","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.7472105151973665","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 74. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":1214,"ct":"20230922T104852","st":7,"con":"{\"commandId\":\"listDevice\",\"name\":\"listDevice\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1695354532691,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_device***20851_1695354532312\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"listDevice\\\",\\\"data\\\":[{\\\"deviceType\\\":\\\"typeIASContact\\\",\\\"deviceName\\\":\\\"\\\",\\\"deviceLocate\\\":\\\"\\\",\\\"gatewayID\\\":\\\"540F57FFFEFA3290\\\",\\\"connectivityType\\\":\\\"zigbee\\\",\\\"deviceID\\\":\\\"0x78E6\\\",\\\"deviceEUI\\\":\\\"0xBC33ACFFFEDB6F47\\\",\\\"deviceInfo\\\":{\\\"manufacturer\\\":\\\"VNPT\\\",\\\"model\\\":\\\"TS0203\\\",\\\"hwVersion\\\":\\\"1.0\\\",\\\"swVersion\\\":\\\"1.0\\\"},\\\"deviceTrait\\\":{\\\"deviceChild\\\":[{\\\"child\\\":1,\\\"childName\\\":\\\"null\\\",\\\"childInfo\\\":[{\\\"traitName\\\":\\\"traitBatPercent\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitBatVoltage\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitAlarmTrigger\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitOpenClose\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"}]}],\\\"numChild\\\":\\\"1\\\"},\\\"customData\\\":{\\\"data1\\\":\\\"null\\\",\\\"data2\\\":\\\"null\\\",\\\"data3\\\":\\\"null\\\"},\\\"_id\\\":\\\"u4BxRQfgWhPwQVCi\\\"}]}}}\",\"recordId\":\"get_list_device***20851_1695354532312\"}","ty":4,"ri":"cin-740ef8df-cd7d-474e-9393-aa21f7004d0b","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_740ef8df-cd7d-474e-9393-aa21f7004d0b","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.32300624600611627","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 75. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":1214,"ct":"20230922T104852","st":7,"con":"{\"commandId\":\"listDevice\",\"name\":\"listDevice\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1695354532691,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_device***20851_1695354532312\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"listDevice\\\",\\\"data\\\":[{\\\"deviceType\\\":\\\"typeIASContact\\\",\\\"deviceName\\\":\\\"\\\",\\\"deviceLocate\\\":\\\"\\\",\\\"gatewayID\\\":\\\"540F57FFFEFA3290\\\",\\\"connectivityType\\\":\\\"zigbee\\\",\\\"deviceID\\\":\\\"0x78E6\\\",\\\"deviceEUI\\\":\\\"0xBC33ACFFFEDB6F47\\\",\\\"deviceInfo\\\":{\\\"manufacturer\\\":\\\"VNPT\\\",\\\"model\\\":\\\"TS0203\\\",\\\"hwVersion\\\":\\\"1.0\\\",\\\"swVersion\\\":\\\"1.0\\\"},\\\"deviceTrait\\\":{\\\"deviceChild\\\":[{\\\"child\\\":1,\\\"childName\\\":\\\"null\\\",\\\"childInfo\\\":[{\\\"traitName\\\":\\\"traitBatPercent\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitBatVoltage\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitAlarmTrigger\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitOpenClose\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"}]}],\\\"numChild\\\":\\\"1\\\"},\\\"customData\\\":{\\\"data1\\\":\\\"null\\\",\\\"data2\\\":\\\"null\\\",\\\"data3\\\":\\\"null\\\"},\\\"_id\\\":\\\"u4BxRQfgWhPwQVCi\\\"}]}}}\",\"recordId\":\"get_list_device***20851_1695354532312\"}","ty":4,"ri":"cin-740ef8df-cd7d-474e-9393-aa21f7004d0b","lt":"20230922T104852","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_740ef8df-cd7d-474e-9393-aa21f7004d0b","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.32300624600611627","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 76. TEST_receive2001CntTelemetryAndCommand:
+{"op":5,"pc":{"m2m:sgn":{"sur":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","sud":false,"nev":{"rep":{"m2m:cin":{"cs":279,"ct":"20230922T104853","st":8,"con":"{\"commandId\":\"get_list_group_device\",\"name\":\"get_list_group_device\",\"data\":\"{\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"connectivityType\\\":\\\"bluetooth\\\",\\\"properties\\\":{\\\"command\\\":\\\"listGroupDevice\\\"}}}\",\"commandType\":\"requestData\",\"recordId\":\"get_list_group_device***\"}","ty":4,"ri":"cin-285b9bec-23c5-46d8-b0c6-494afb1e1f13","lt":"20230922T104853","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_285b9bec-23c5-46d8-b0c6-494afb1e1f13","et":"19700101T164536","cr":"Sb291bd0d-0c40-4429-bb1b-632aceb9d95b"}},"net":3},"cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"to":"/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rqi":"12e4ae2c-1d93-4d7d-815b-ff62f5063f1d","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 78. MessageOutSideAgentProcessToDeviceManagement:
+{"typeMessage":"requestData","dataMessage":{"connectivityType":"bluetooth","properties":{"command":"listGroupDevice"}},"requestID":"get_list_group_device***"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 79. MessageOutSideDeviceManagementToConnAssistant:
+{"typeMessage":"requestData","dataMessage":{"connectivityType":"bluetooth","properties":{"command":"listGroupDevice"}},"requestID":"get_list_group_device***"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 77. MessageOutSideAgentToAgentProcessCommand:
+{"commandId":"get_list_group_device","name":"get_list_group_device","data":"{\"typeMessage\":\"requestData\",\"dataMessage\":{\"connectivityType\":\"bluetooth\",\"properties\":{\"command\":\"listGroupDevice\"}}}","commandType":"requestData","recordId":"get_list_group_device***"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 80. ConnectivityAssistantInsideCommunicateToBluetoothHandle:
+{"typeMessage":"requestData","dataMessage":{"connectivityType":"bluetooth","properties":{"command":"listGroupDevice"}},"requestID":"get_list_group_device***"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 81. ConnectivityAssistantInSideBluetoothHandleToCommunicate:
+{"typeMessage":"requestData","dataMessage":{"connectivityType":"bluetooth","properties":{"command":"listGroupDevice","data":{"stateGroup":[],"deviceGroup":{}}}},"requestID":"get_list_group_device***","status":"success"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 82. MessageOutSideConnAssistantToAgentProcess:
+{"typeMessage":"requestData","dataMessage":{"connectivityType":"bluetooth","properties":{"command":"listGroupDevice","data":{"stateGroup":[],"deviceGroup":{}}}},"requestID":"get_list_group_device***","status":"success"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 83. MessageOutSideAgentProcessToAgentCommand:
+"{\"commandId\":\"listGroupDevice\",\"name\":\"listGroupDevice\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1695354533348,\"responseData\":\"{\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"connectivityType\\\":\\\"bluetooth\\\",\\\"properties\\\":{\\\"command\\\":\\\"listGroupDevice\\\",\\\"data\\\":{\\\"stateGroup\\\":[],\\\"deviceGroup\\\":{}}}},\\\"requestID\\\":\\\"get_list_group_device***\\\",\\\"status\\\":\\\"success\\\"}\",\"recordId\":\"get_list_group_device***\"}",
+
+// Time: 10:48:16    ---    Date: 22-9
+// 84. TEST_sendCntCommand:
+{"fr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","op":1,"pc":{"m2m:cin":{"cnf":"text/plains:0","con":"{\"commandId\":\"listGroupDevice\",\"name\":\"listGroupDevice\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1695354533348,\"responseData\":\"{\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"connectivityType\\\":\\\"bluetooth\\\",\\\"properties\\\":{\\\"command\\\":\\\"listGroupDevice\\\",\\\"data\\\":{\\\"stateGroup\\\":[],\\\"deviceGroup\\\":{}}}},\\\"requestID\\\":\\\"get_list_group_device***\\\",\\\"status\\\":\\\"success\\\"}\",\"recordId\":\"get_list_group_device***\"}"}},"rqi":0.8603662757668644,"to":"/in-cse/in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command","ty":4,"tkns":["eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJ0ay02OTQwMTY2Yi0wOGMzLTQ5ODctOGZjZC0yNDQ2OGU1MGYyNDciLCJleHAiOjE3MjA5NzY3MDB9.yXBkTeRWV8lQdYF912H0Gt7L3BUURkdX8LD7px4CZiM"]},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 85. MessageOutSideAgentProcessToAgentLocalCommand:
+{"commandId":"listGroupDevice","name":"listGroupDevice","commandType":"requestData","status":"5","updateTime":1695354533359,"responseData":{"typeMessage":"requestData","dataMessage":{"connectivityType":"bluetooth","properties":{"command":"listGroupDevice","data":{"stateGroup":[],"deviceGroup":{}}}},"requestID":"get_list_group_device***","status":"success"},"recordId":"get_list_group_device***"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 86. MessageOutSideAgentLocalToMobileCommand:
+{"commandId":"listGroupDevice","name":"listGroupDevice","commandType":"requestData","status":"5","updateTime":1695354533359,"responseData":{"typeMessage":"requestData","dataMessage":{"connectivityType":"bluetooth","properties":{"command":"listGroupDevice","data":{"stateGroup":[],"deviceGroup":{}}}},"requestID":"get_list_group_device***","status":"success"},"recordId":"get_list_group_device***"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 87. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":429,"ct":"20230922T104853","st":9,"con":"{\"commandId\":\"listGroupDevice\",\"name\":\"listGroupDevice\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1695354533348,\"responseData\":\"{\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"connectivityType\\\":\\\"bluetooth\\\",\\\"properties\\\":{\\\"command\\\":\\\"listGroupDevice\\\",\\\"data\\\":{\\\"stateGroup\\\":[],\\\"deviceGroup\\\":{}}}},\\\"requestID\\\":\\\"get_list_group_device***\\\",\\\"status\\\":\\\"success\\\"}\",\"recordId\":\"get_list_group_device***\"}","ty":4,"ri":"cin-1742decc-5268-4cd4-8c64-bb9b3d6d54a8","lt":"20230922T104853","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_1742decc-5268-4cd4-8c64-bb9b3d6d54a8","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.8603662757668644","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 88. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":429,"ct":"20230922T104853","st":9,"con":"{\"commandId\":\"listGroupDevice\",\"name\":\"listGroupDevice\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1695354533348,\"responseData\":\"{\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"connectivityType\\\":\\\"bluetooth\\\",\\\"properties\\\":{\\\"command\\\":\\\"listGroupDevice\\\",\\\"data\\\":{\\\"stateGroup\\\":[],\\\"deviceGroup\\\":{}}}},\\\"requestID\\\":\\\"get_list_group_device***\\\",\\\"status\\\":\\\"success\\\"}\",\"recordId\":\"get_list_group_device***\"}","ty":4,"ri":"cin-1742decc-5268-4cd4-8c64-bb9b3d6d54a8","lt":"20230922T104853","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_1742decc-5268-4cd4-8c64-bb9b3d6d54a8","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.8603662757668644","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 89. TEST_receive2001CntTelemetryAndCommand:
+{"op":5,"pc":{"m2m:sgn":{"sur":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","sud":false,"nev":{"rep":{"m2m:cin":{"cs":274,"ct":"20230922T104858","st":10,"con":"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"data\":\"{\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"automation\\\",\\\"info\\\":{}}}}}\",\"commandType\":\"ruleEngine\",\"recordId\":\"get_list_rule***1695354538648\"}","ty":4,"ri":"cin-daada312-5de9-4f62-9741-978e150c0857","lt":"20230922T104858","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_daada312-5de9-4f62-9741-978e150c0857","et":"19700101T164536","cr":"Sb291bd0d-0c40-4429-bb1b-632aceb9d95b"}},"net":3},"cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"to":"/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rqi":"0114d8a7-28b8-4961-81ee-b8ae4ac22b04","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 91. MessageOutSideAgentProcessToRuleEngine:
+{"typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":{"typeRule":"automation","info":{}}}},"requestID":"get_list_rule***1695354538648"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 93. MessageInSideAutomationToRuleEngine:
+{"requestID":"get_list_rule***1695354538648","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":[]}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 92. MessageInSideRuleEngineToAutomation:
+{"command":"getListRule","data":{"typeRule":"automation","info":{"requestID":"get_list_rule***1695354538648"}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 90. MessageOutSideAgentToAgentProcessCommand:
+{"commandId":"getListRule","name":"getListRule","data":"{\"typeMessage\":\"ruleEngine\",\"dataMessage\":{\"properties\":{\"command\":\"getListRule\",\"data\":{\"typeRule\":\"automation\",\"info\":{}}}}}","commandType":"ruleEngine","recordId":"get_list_rule***1695354538648"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 94. MessageOutSideRuleEngineToAgentProcess:
+{"requestID":"get_list_rule***1695354538648","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":[]}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 95. MessageOutSideAgentProcessToAgentCommand:
+"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354538865,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_rule***1695354538648\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":[]}}}\",\"recordId\":\"get_list_rule***1695354538648\"}",
+
+// Time: 10:48:16    ---    Date: 22-9
+// 96. TEST_receive2001CntTelemetryAndCommand:
+{"op":5,"pc":{"m2m:sgn":{"sur":"sub-064a414a-a6dd-4408-8991-3a6b6914c0a0","sud":false,"nev":{"rep":{"m2m:cin":{"cs":269,"ct":"20230922T104858","st":11,"con":"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"data\":\"{\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":{\\\"typeRule\\\":\\\"scene\\\",\\\"info\\\":{}}}}}\",\"commandType\":\"ruleEngine\",\"recordId\":\"get_list_rule***1695354538648\"}","ty":4,"ri":"cin-dd424c38-ea8b-4815-90f3-9c954895e38e","lt":"20230922T104858","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_dd424c38-ea8b-4815-90f3-9c954895e38e","et":"19700101T164536","cr":"Sb291bd0d-0c40-4429-bb1b-632aceb9d95b"}},"net":3},"cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"to":"/S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","rqi":"94327e47-b8e2-4e2d-9f24-06f87e275db6","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 97. MessageOutSideAgentProcessToAgentLocalCommand:
+{"commandId":"getListRule","name":"getListRule","commandType":"ruleEngine","status":"5","updateTime":1695354538870,"responseData":{"requestID":"get_list_rule***1695354538648","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":[]}}},"recordId":"get_list_rule***1695354538648"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 98. MessageOutSideAgentLocalToMobileCommand:
+{"commandId":"getListRule","name":"getListRule","commandType":"ruleEngine","status":"5","updateTime":1695354538870,"responseData":{"requestID":"get_list_rule***1695354538648","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":[]}}},"recordId":"get_list_rule***1695354538648"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 99. TEST_sendCntCommand:
+{"fr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","op":1,"pc":{"m2m:cin":{"cnf":"text/plains:0","con":"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354538865,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_rule***1695354538648\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":[]}}}\",\"recordId\":\"get_list_rule***1695354538648\"}"}},"rqi":0.22753313765861094,"to":"/in-cse/in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command","ty":4,"tkns":["eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJ0ay02OTQwMTY2Yi0wOGMzLTQ5ODctOGZjZC0yNDQ2OGU1MGYyNDciLCJleHAiOjE3MjA5NzY3MDB9.yXBkTeRWV8lQdYF912H0Gt7L3BUURkdX8LD7px4CZiM"]},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 100. MessageOutSideAgentToAgentProcessCommand:
+{"commandId":"getListRule","name":"getListRule","data":"{\"typeMessage\":\"ruleEngine\",\"dataMessage\":{\"properties\":{\"command\":\"getListRule\",\"data\":{\"typeRule\":\"scene\",\"info\":{}}}}}","commandType":"ruleEngine","recordId":"get_list_rule***1695354538648"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 101. MessageOutSideAgentProcessToRuleEngine:
+{"typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":{"typeRule":"scene","info":{}}}},"requestID":"get_list_rule***1695354538648"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 102. MessageInSideRuleEngineToScene:
+{"command":"getListRule","data":{"typeRule":"scene","info":{"requestID":"get_list_rule***1695354538648"}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 103. MessageInSideSceneToRuleEngine:
+{"requestID":"get_list_rule***1695354538648","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":[]}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 104. MessageOutSideRuleEngineToAgentProcess:
+{"requestID":"get_list_rule***1695354538648","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":[]}}},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 105. MessageOutSideAgentProcessToAgentCommand:
+"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354538988,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_rule***1695354538648\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":[]}}}\",\"recordId\":\"get_list_rule***1695354538648\"}",
+
+// Time: 10:48:16    ---    Date: 22-9
+// 106. TEST_sendCntCommand:
+{"fr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","op":1,"pc":{"m2m:cin":{"cnf":"text/plains:0","con":"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354538988,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_rule***1695354538648\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":[]}}}\",\"recordId\":\"get_list_rule***1695354538648\"}"}},"rqi":0.49088799953460693,"to":"/in-cse/in-name/ONEHome_VirtualDevice_3OAt_1695056700016/cnt_command","ty":4,"tkns":["eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJ0ay02OTQwMTY2Yi0wOGMzLTQ5ODctOGZjZC0yNDQ2OGU1MGYyNDciLCJleHAiOjE3MjA5NzY3MDB9.yXBkTeRWV8lQdYF912H0Gt7L3BUURkdX8LD7px4CZiM"]},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 107. MessageOutSideAgentProcessToAgentLocalCommand:
+{"commandId":"getListRule","name":"getListRule","commandType":"ruleEngine","status":"5","updateTime":1695354539000,"responseData":{"requestID":"get_list_rule***1695354538648","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":[]}}},"recordId":"get_list_rule***1695354538648"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 108. MessageOutSideAgentLocalToMobileCommand:
+{"commandId":"getListRule","name":"getListRule","commandType":"ruleEngine","status":"5","updateTime":1695354539000,"responseData":{"requestID":"get_list_rule***1695354538648","status":"success","typeMessage":"ruleEngine","dataMessage":{"properties":{"command":"getListRule","data":[]}}},"recordId":"get_list_rule***1695354538648"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 109. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":354,"ct":"20230922T104859","st":12,"con":"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354538865,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_rule***1695354538648\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":[]}}}\",\"recordId\":\"get_list_rule***1695354538648\"}","ty":4,"ri":"cin-393ba550-fce6-4209-bcf9-012e738a13d9","lt":"20230922T104859","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_393ba550-fce6-4209-bcf9-012e738a13d9","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.22753313765861094","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 110. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":354,"ct":"20230922T104859","st":12,"con":"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354538865,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_rule***1695354538648\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":[]}}}\",\"recordId\":\"get_list_rule***1695354538648\"}","ty":4,"ri":"cin-393ba550-fce6-4209-bcf9-012e738a13d9","lt":"20230922T104859","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_393ba550-fce6-4209-bcf9-012e738a13d9","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.22753313765861094","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 111. TEST_receive2001CntTelemetryAndCommand:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":354,"ct":"20230922T104859","st":12,"con":"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354538988,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_rule***1695354538648\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":[]}}}\",\"recordId\":\"get_list_rule***1695354538648\"}","ty":4,"ri":"cin-af85569f-f4e0-4edd-879e-5a6432f9629a","lt":"20230922T104859","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_af85569f-f4e0-4edd-879e-5a6432f9629a","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.49088799953460693","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 112. MessageOutSideAgentToAgentProcessResponse:
+{"rsc":2001,"pc":{"m2m:cin":{"cs":354,"ct":"20230922T104859","st":12,"con":"{\"commandId\":\"getListRule\",\"name\":\"getListRule\",\"commandType\":\"ruleEngine\",\"status\":\"5\",\"updateTime\":1695354538988,\"responseData\":\"{\\\"requestID\\\":\\\"get_list_rule***1695354538648\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"ruleEngine\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"getListRule\\\",\\\"data\\\":[]}}}\",\"recordId\":\"get_list_rule***1695354538648\"}","ty":4,"ri":"cin-af85569f-f4e0-4edd-879e-5a6432f9629a","lt":"20230922T104859","pi":"cnt-1c32e3c9-7583-4065-8f70-90e57e4c4bb5","cnf":"text/plains:0","rn":"cin_af85569f-f4e0-4edd-879e-5a6432f9629a","et":"19700101T164536","cr":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71"}},"rqi":"0.49088799953460693","to":"S879c162c-6cc1-40ab-b0bf-7e3e0aa70f71","fr":"/in-cse"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 113. gw/540F57FFFEFA3290/heartbeat:
+{"networkUp":true,"networkPanId":"0x4763","radioTxPower":20,"radioChannel":20},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 114. GET_RSSI:
+{"signal":"-32 dBm"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 115. gw/540F57FFFEFA3290/heartbeat:
+{"networkUp":true,"networkPanId":"0x4763","radioTxPower":20,"radioChannel":20},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 116. keepAlive_agentLocal:
+{"typeMessage":"keepAlive","idProcess":"agentLocal"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 117. keepAlive_response_agentLocal:
+{"typeMessage":"keepAlive","command":"keepAliveResponse","idProcess":"agentLocal"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 118. gw/540F57FFFEFA3290/heartbeat:
+{"networkUp":true,"networkPanId":"0x4763","radioTxPower":20,"radioChannel":20},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 119. keepAlive_agentProcess:
+{"typeMessage":"keepAlive","idProcess":"agentProcess"},
+
+// Time: 10:48:16    ---    Date: 22-9
+// 120. keepAlive_response_agentProcess:
+{"typeMessage":"keepAlive","command":"keepAliveResponse","idProcess":"agentProcess"},
+
+]

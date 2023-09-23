@@ -1,0 +1,17 @@
+[// Time: 17:12:46    ---    Date: 19-9
+// 1. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"requestID":"add_child_device***20851_1695118308.5388288","status":"error","typeMessage":"commission","dataMessage":{"connectivityType":"zigbee","properties":{"command":"responseRequestAddDevice","data":"error"}}},
+
+// Time: 17:12:46    ---    Date: 19-9
+// 2. gw/8CF681FFFEF006B0/commands:
+{"commands":[{"command":"plugin network-creator-security close-network","postDelayMs":100}]},
+
+// Time: 17:12:46    ---    Date: 19-9
+// 3. gw/8CF681FFFEF006B0/executed:
+{"command":"plugin network-creator-security close-network"},
+
+// Time: 17:12:46    ---    Date: 19-9
+// 4. gw/8CF681FFFEF006B0/executed:
+{"delayMs":100},
+
+]

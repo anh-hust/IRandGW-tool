@@ -1,0 +1,50 @@
+.column {
+  float: left;
+  width: 20%;
+}
+
+.btn {
+  float: left;
+  width: 100%;
+  margin-top: 250px;
+}
+
+#listenBtn {
+  width: 10em;
+  height: 10em;
+}
+
+#overrideBtn {
+  width: 10em;
+  height: 10em;
+}
+
+#cancelBtn {
+  width: 10em;
+  height: 10em;
+}
+
+#deleteBtn {
+  width: 10em;
+  height: 10em;
+}
+
+#checkBtn {
+  width: 10em;
+  height: 10em;
+}
+
+#checkAgainBtn {
+  width: 10em;
+  height: 10em;
+}
+
+#deleteTestedBtn {
+  width: 10em;
+  height: 10em;
+}
+
+#sendRawBtn {
+  width: 10em;
+  height: 10em;
+}
