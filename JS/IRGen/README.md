@@ -8,17 +8,19 @@
 
 ### Download essential
 
+1. Download and install [NodeJS](https://nodejs.org/en/download/current)
+
+2. Then run some command
+
 ```
 npm init -y
 ```
 
 ```
-npm install nedb express body-parser cors mqtt node-fetch nodejs archiver path zlib
+npm install nedb fs mqtt express cors path
 ```
 
-### Make script command npm
-
-## STEP 1: Set up Mosquitto
+## STEP 2: Set up Mosquitto
 
 1. Download and install [Mosquitto](https://github.com/benbalter/word-to-markdown)
 
@@ -29,15 +31,15 @@ listener 1883
 allow_anonymous=true
 ```
 
-## STEP 2: Run tool
+## STEP 3: Run tool
 
-1. Mosquitto
+1. Open MQTT broker using Mosquitto
 
 ```
-sudo mosquitto -c <path_to_.conf_file>
+sudo mosquitto -c <path_to_.conf_file>.conf
 ```
 
-2. NodeJS (Server)
+2. NodeJS (Server side)
 
 ```
 node server.js
@@ -49,10 +51,10 @@ node server.js
 node reloadDB.js
 ```
 
-3. And you can also check which DB need to maintain
+3. And you can also check which DB need to maintain, the result export to checkMaintain_result.txt
 
 ```
-node checkProtocolDB.js
+node checkMaintain.js
 ```
 
 3. And you can also make remoteList CSV file of all remote you already collect
@@ -70,7 +72,6 @@ Subcribe these topic:
 ```
 
 1. data
-2. convertedData (no longer available)
 3. checkedData
 
 ```
@@ -93,11 +94,7 @@ control
 4. Check button
 5. Override checked button
 6. Delete checked button
-
-#### DEPRECATE
-
-1. Encode whole database
-2. Convert database to new format
+7. Send raw of specific button
 
 ## ESP side
 
@@ -114,7 +111,6 @@ Publish to these topic
 ```
 
 1. data
-2. convertedData (no longer available)
 3. checkedData
 
 ```
