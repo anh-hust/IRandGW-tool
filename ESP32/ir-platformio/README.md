@@ -2,29 +2,16 @@
 
 ### 1. Open HOSPOT ON LAPTOP
 
-- For window [click here](https://support.microsoft.com/en-us/windows/use-your-windows-pc-as-a-mobile-hotspot-c89b0fad-72d5-41e8-f7ea-406ad9036b85)
+If you have no idea to do that, check it out
 
-- For Ubuntu [click here](https://help.ubuntu.com/stable/ubuntu-help/net-wireless-adhoc.html.en)
+-   For window [click here](https://support.microsoft.com/en-us/windows/use-your-windows-pc-as-a-mobile-hotspot-c89b0fad-72d5-41e8-f7ea-406ad9036b85)
+
+-   For Ubuntu [click here](https://help.ubuntu.com/stable/ubuntu-help/net-wireless-adhoc.html.en)
 
 ### 2. Determine the MQTT server (broker) address running locally on your machine
 
 ```
 ip r
-```
-
-### 3. Run MQTT server
-
-**3.1. Insert this content into myMQTTconfig.conf**
-
-```
-listener 1883
-allow_anonymous true
-```
-
-**3.2. Run MQTT broker**
-
-```
-sudo mosquitto -c <full_path_to_conf_file_you_just_create>
 ```
 
 ### 4. Config MACROS for connection of ESP32
@@ -41,3 +28,4 @@ const char* password = "<pasword_host_port_at_step_1>";
 ```
 
 ## All done!!! Enjoy and collect & check IR signal
+ 😋😋😋
