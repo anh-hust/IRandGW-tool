@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://skillicons.dev/icons?i=linux,bash"/>
+<img width=200 src="https://skillicons.dev/icons?i=linux,bash"/>
 
 # Overview
 
