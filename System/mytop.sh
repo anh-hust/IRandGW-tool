@@ -2,9 +2,17 @@
 #!/bin/sh
 clear
 
-rm -r "$HOME/log/$(date -d '-1 day' +%d_%m_%y)"
-
 PARENT_FOLDER="$HOME/log/$(date +%d_%m_%y)"
+
+# remove all, except "this day" log folder
+cd $HOME/log
+for FILE in *; do
+  if [[ "$FILE" != "$(date +%d_%m_%y)" ]]; then 
+    rm -rv "$FILE"
+  fi
+done
+
+# Go to log folder
 mkdir -p $PARENT_FOLDER
 cd $PARENT_FOLDER
 
@@ -12,7 +20,7 @@ cd $PARENT_FOLDER
 LOG_FILE="$(date +"%H_%M").txt"
 touch $LOG_FILE
 
-# Loop indefinitely to keep appending updates with newline characters
+# Loop indefinitely to keep appending updates
 while true; do
   (date +%d-%m-%y\ "%H:%M:%S") >> $LOG_FILE
   (top -b -n1 | grep Main) >> $LOG_FILE
