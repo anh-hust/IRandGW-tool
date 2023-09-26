@@ -3,6 +3,7 @@
 clear
 
 PARENT_FOLDER="$HOME/log/$(date +%d_%m_%y)"
+mkdir -p $PARENT_FOLDER
 
 # remove all, except "this day" log folder
 cd $HOME/log
@@ -13,7 +14,6 @@ for FILE in *; do
 done
 
 # Go to log folder
-mkdir -p $PARENT_FOLDER
 cd $PARENT_FOLDER
 
 # Specify the log file
