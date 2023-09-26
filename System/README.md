@@ -36,19 +36,25 @@ unzip mytop.zip
 
 ## STEP 2. Build service
 
-1. Move the service file 🚑 to right place
+1. Make it executed
+
+```
+chmod 777 mytop.s*
+```
+
+2. Move the service file 🚑 to right place
 
 ```
 mv ~/mytop.service /etc/systemd/system
 ```
 
-2. Enable the service
+3. Enable the service
 
 ```
 systemctl enable mytop.service
 ```
 
-3. Hell yes 👻, it done !!, reboot
+4. Hell yes 👻, it done !!, reboot
 
 ```
 reboot
