@@ -3,6 +3,7 @@ Description=Trace Main* process
 
 [Service]
 Type=simple
+User=root
 ExecStart=/bin/sh /home/root/mytop.sh
 Restart=always
 RestartSec=1s
