@@ -4,7 +4,7 @@ Description=Trace Main* process
 [Service]
 Type=simple
 User=root
-ExecStart=/bin/sh /home/root/mytop.sh
+ExecStart=/bin/sh /home/root/topLogGW.sh
 Restart=always
 RestartSec=1s
 

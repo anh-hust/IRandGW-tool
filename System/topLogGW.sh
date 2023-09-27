@@ -18,7 +18,7 @@ done
 cd $PARENT_FOLDER
 
 # Specify the log file
-LOG_FILE="$(date +"%H_%M").txt"
+LOG_FILE="$(date +"%Hh_%Mm").txt"
 touch $LOG_FILE
 
 # Loop indefinitely to keep appending updates

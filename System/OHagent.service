@@ -1,0 +1,13 @@
+[Unit]
+Description=OHagent
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/sh /home/root/FirmwareGateway/mainAgent.sh
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
