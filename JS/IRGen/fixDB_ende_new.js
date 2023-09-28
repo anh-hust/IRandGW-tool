@@ -122,6 +122,48 @@ function decode(encodedRaw) {
   return raw;
 }
 
+async function updateButtonToDB(db, model_a, button_a, encodedRaw) {
+  return new Promise((resolve, reject) => {
+    if (button_a.code.length != encodedRaw.length)
+      console.log(
+        `\t${button_a.key}: ${button_a.code.length}  -  ${encodedRaw.length}`
+      );
+    /** override new button into model */
+    db.update(
+      { model: model_a },
+      {
+        // pull old btn, (pull all key: key_val)
+        $pull: {
+          map_code: {
+            key: button_a.key,
+          },
+        },
+      },
+      {},
+      () => {
+        db.update(
+          { model: model_a },
+          {
+            $push: {
+              map_code: {
+                key: button_a.key,
+                name: button_a.name,
+                code: encodedRaw,
+                mapping_code: button_a.mapping_code,
+                state: 1,
+              },
+            },
+          },
+          {},
+          () => {
+            resolve("OK");
+          }
+        );
+      }
+    );
+  });
+}
+
 const DB_FOLDER_PATH = "database";
 const categoryFolder = fs.readdirSync(DB_FOLDER_PATH);
 
@@ -133,7 +175,7 @@ const fixThemAll = (pathToRemote) => {
         console.log(err);
         reject(err);
       }
-      db.find({}, (err, docs) => {
+      db.find({}, async (err, docs) => {
         if (err) {
           console.log(err);
           reject(err);
@@ -143,9 +185,7 @@ const fixThemAll = (pathToRemote) => {
         if (docs[0].map_code.length) {
           for (const button of docs[0].map_code) {
             var encoded = encodeRaw(decode(button.code));
-            if (button.code.length != encoded.length)
-              console.log(`\t${button.code.length}  -  ${encoded.length}`);
-            button.code = encoded;
+            await updateButtonToDB(db, docs[0].model, button, encoded);
           }
           resolve("OK");
         } else {
@@ -176,6 +216,7 @@ async function main() {
       );
       // traverse remote
       for (remote of remoteList) {
+        console.log(remote);
         const result = await fixThemAll(
           `${DB_FOLDER_PATH}/${category}/${brand}/${remote}`
         );

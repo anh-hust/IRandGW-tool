@@ -49,6 +49,7 @@ async function main() {
       );
 
       for (remote of remoteList) {
+        console.log(remote);
         await reload(`${DB_FOLDER_PATH}/${category}/${brand}/${remote}`);
         // console.log(`${remote}`);
         countRemoteTotal += 1;
