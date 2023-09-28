@@ -7,6 +7,8 @@ const { rejects } = require("assert");
 /**
  * Set up prequisites for log file
  */
+var timestampAtMessage;
+var dateFormatAtMessage;
 const timestamp = Date.now();
 const dateFormat = new Date(timestamp);
 const FOLDER = `./log/${dateFormat.getDate()}_${dateFormat.getMonth() + 1}`;
@@ -44,9 +46,11 @@ function logOn(client) {
   var countMessage = 0; // index the message
   fs.appendFileSync(LOG_FILE, "[", (err) => {});
   client.on("message", (topic, payload) => {
-    var timeContent = `// Time: ${dateFormat.getHours()}:${dateFormat.getMinutes()}:${dateFormat.getSeconds()}`;
-    var daycontent = `    ---    Date: ${dateFormat.getDate()}-${
-      dateFormat.getMonth() + 1
+    timestampAtMessage = Date.now();
+    dateFormatAtMessage = new Date(timestampAtMessage);
+    var timeContent = `// Time: ${dateFormatAtMessage.getHours()}:${dateFormatAtMessage.getMinutes()}:${dateFormatAtMessage.getSeconds()}`;
+    var daycontent = `    ---    Date: ${dateFormatAtMessage.getDate()}-${
+      dateFormatAtMessage.getMonth() + 1
     }`;
     countMessage += 1;
     var content =

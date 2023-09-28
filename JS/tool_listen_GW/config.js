@@ -8,6 +8,26 @@ var Config = {
 };
 
 var Topics = {
+  /*Topic communicate with Agent*/
+  MQTT_TOPIC_REICEVIE_MESSAGE_OUT_SIDE_AGENT_COMMAND:
+    "MessageOutSideAgentToAgentProcessCommand", //MQTT Topic to receivce message from Agent
+  MQTT_TOPIC_REICEVIE_MESSAGE_OUT_SIDE_AGENT_RESPONSE:
+    "MessageOutSideAgentToAgentProcessResponse",
+  MQTT_TOPIC_SEND_MESSAGE_OUT_SIDE_AGENT_COMMAND:
+    "MessageOutSideAgentProcessToAgentCommand", //MQTT Topic to send message to Agent
+  MQTT_TOPIC_SEND_MESSAGE_OUT_SIDE_AGENT_TELEMETRY:
+    "MessageOutSideAgentProcessToAgentTelemetry", //MQTT Topic to send message to Agent
+  MQTT_TOPIC_SEND_MESSAGE_OUT_SIDE_AGENT_DEVICE_STATUS:
+    "MessageOutSideAgentProcessToAgentDeviceStatus",
+  MQTT_TOPIC_SEND_MESSAGE_OUT_SIDE_AGENT_RESPONSE:
+    "MessageOutSideAgentProcessToAgentResponse", //MQTT Topic to send message to Agent
+
+  /*Topic communicate with Device Management*/
+  MQTT_TOPIC_REICEVIE_MESSAGE_OUT_SIDE_DEVICE_MANAGEMENT:
+    "MessageOutSideDeviceManagementToAgentProcess", //MQTT Topic to receivce message from Device Management
+  MQTT_TOPIC_SEND_MESSAGE_OUT_SIDE_DEVICE_MANAGEMENT:
+    "MessageOutSideAgentProcessToDeviceManagement", //MQTT Topic to send message to Device Management
+
   /*Topic communicate with Agent Process*/
   // MQTT_TOPIC_REICEVIE_MESSAGE_OUT_SIDE_AGENT_PROCESS:
   //   "MessageOutSideAgentProcessToConnAssistant", //MQTT Topic to receivce message from AgentProcess
@@ -19,10 +39,10 @@ var Topics = {
   // MQTT_TOPIC_REICEVIE_MESSAGE_OUT_SIDE_DEVICE_MANAGEMENT	: "MessageOutSideDeviceManagementToConnAssistant",		//MQTT Topic to receivce message from DeviceManagement
   // MQTT_TOPIC_SEND_MESSAGE_OUT_SIDE_DEVICE_MANAGEMENT		: "MessageOutSideConnAssistantToDeviceManagement",		//MQTT Topic to send message DeviceManagement
   /*Topic communicate with zigbee-handle*/
-  MQTT_TOPIC_REICEVIE_MESSAGE_IN_SIDE_ZIGBEE:
-    "ConnectivityAssistantInSideZigbeeHandleToCommunicate", //MQTT Topic to receivce message from zigbee-handle
-  MQTT_TOPIC_SEND_MESSAGE_IN_SIDE_ZIGBEE:
-    "ConnectivityAssistantInsideCommunicateToZigbeeHandle", //MQTT Topic to send message to zigbee-handle
+  // MQTT_TOPIC_REICEVIE_MESSAGE_IN_SIDE_ZIGBEE:
+  //   "ConnectivityAssistantInSideZigbeeHandleToCommunicate", //MQTT Topic to receivce message from zigbee-handle
+  // MQTT_TOPIC_SEND_MESSAGE_IN_SIDE_ZIGBEE:
+  //   "ConnectivityAssistantInsideCommunicateToZigbeeHandle", //MQTT Topic to send message to zigbee-handle
 
   /*Topic communicate with BLE*/
   // MQTT_TOPIC_REICEVIE_MESSAGE_IN_SIDE_BLUETOOTH			: "ConnectivityAssistantInSideBluetoothHandleToCommunicate", //MQTT Topic to receivce message from BLE
@@ -40,23 +60,23 @@ var Topics = {
 
   /* Topic in Zigbee network */
   // GW_HEART_BEAT: "/heartbeat",
-  GW_DEVICES: "/devices",
-  GW_RELAYS: "/relays",
-  GW_SETTINGS: "/settings",
-  GW_DEVICE_JOINED: "/devicejoined",
-  GW_DEVICE_LEFT: "/deviceleft",
-  GW_DEVICE_STATE_CHANGE: "/devicestatechange",
-  GW_OTA_EVENT: "/otaevent",
-  GW_EXECUTED: "/executed",
-  GW_ZCL_RESPONSE: "/zclresponse",
-  GW_ZDO_RESPONSE: "/zdoresponse",
+  // GW_DEVICES: "/devices",
+  // GW_RELAYS: "/relays",
+  // GW_SETTINGS: "/settings",
+  // GW_DEVICE_JOINED: "/devicejoined",
+  // GW_DEVICE_LEFT: "/deviceleft",
+  // GW_DEVICE_STATE_CHANGE: "/devicestatechange",
+  // GW_OTA_EVENT: "/otaevent",
+  // GW_EXECUTED: "/executed",
+  // GW_ZCL_RESPONSE: "/zclresponse",
+  // GW_ZDO_RESPONSE: "/zdoresponse",
 
-  GW_COMMANDS: "/commands",
-  GW_PUB_STATE: "/publishstate",
-  GW_UPDATE_SETTINGS: "/updatesettings",
+  // GW_COMMANDS: "/commands",
+  // GW_PUB_STATE: "/publishstate",
+  // GW_UPDATE_SETTINGS: "/updatesettings",
 
-  /** Fucking hidden in GW code */
-  GW_TRUSTCENTER: "/trustcenterjoinedNodeID", // addReallyDeviceToList for devicejoined event check
+  // /** Fucking hidden in GW code */
+  // GW_TRUSTCENTER: "/trustcenterjoinedNodeID", // addReallyDeviceToList for devicejoined event check
 };
 
 function assignTopics() {
